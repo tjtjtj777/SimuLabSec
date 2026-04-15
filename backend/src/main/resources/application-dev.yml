@@ -1,0 +1,12 @@
+spring:
+  sql:
+    init:
+      mode: never
+
+logging:
+  level:
+    com.simulab: DEBUG
+
+simulab:
+  demo:
+    initialize-enabled: true

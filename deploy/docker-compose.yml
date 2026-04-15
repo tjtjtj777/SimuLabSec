@@ -1,0 +1,110 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: simulab-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-simulab-root}
+      MYSQL_DATABASE: ${MYSQL_DB:-simulab}
+      MYSQL_USER: ${MYSQL_USER:-simulab}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-simulab-pass}
+      TZ: ${TZ:-Asia/Tokyo}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u${MYSQL_USER:-simulab} -p${MYSQL_PASSWORD:-simulab-pass}"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    networks:
+      - simulab-net
+
+  redis:
+    image: redis:7-alpine
+    container_name: simulab-redis
+    restart: unless-stopped
+    command: ["sh", "-c", "if [ -n \"$${REDIS_PASSWORD}\" ]; then exec redis-server --appendonly yes --requirepass \"$${REDIS_PASSWORD}\"; else exec redis-server --appendonly yes; fi"]
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-}
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "if [ -n \"$$REDIS_PASSWORD\" ]; then redis-cli -a \"$$REDIS_PASSWORD\" ping; else redis-cli ping; fi"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    networks:
+      - simulab-net
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    image: simulab/backend:local
+    container_name: simulab-backend
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-prod}
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_DB: ${MYSQL_DB:-simulab}
+      MYSQL_USER: ${MYSQL_USER:-simulab}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-simulab-pass}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-}
+      JWT_SECRET: ${JWT_SECRET:-SimuLabJwtSecretKeyForStageOneDevelopment123456}
+      SPRINGDOC_API_DOCS_ENABLED: ${SPRINGDOC_API_DOCS_ENABLED:-false}
+      SPRINGDOC_SWAGGER_UI_ENABLED: ${SPRINGDOC_SWAGGER_UI_ENABLED:-false}
+      SIMULAB_CORS_ALLOWED_ORIGINS: ${SIMULAB_CORS_ALLOWED_ORIGINS:-*}
+      LOG_LEVEL_ROOT: ${LOG_LEVEL_ROOT:-WARN}
+      LOG_LEVEL_SIMULAB: ${LOG_LEVEL_SIMULAB:-INFO}
+      JAVA_OPTS: ${JAVA_OPTS:--Xms256m -Xmx768m}
+      TZ: ${TZ:-Asia/Tokyo}
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - simulab-net
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api}
+    image: simulab/frontend:local
+    container_name: simulab-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - simulab-net
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: simulab-nginx
+    restart: unless-stopped
+    depends_on:
+      - frontend
+      - backend
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./ssl:/etc/letsencrypt:ro
+      - ./certbot/www:/var/www/certbot:ro
+    ports:
+      - "${HTTP_HOST_PORT:-80}:80"
+      - "${HTTPS_HOST_PORT:-443}:443"
+    networks:
+      - simulab-net
+
+volumes:
+  mysql_data:
+  redis_data:
+
+networks:
+  simulab-net:
+    driver: bridge

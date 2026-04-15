@@ -1,0 +1,417 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-04-14T15:17:53.388+09:00  INFO 193628 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Starting SimuLabBackendApplication using Java 17.0.18 with PID 193628 (D:\vscodeProject\SimuLab\backend\target\classes started by 唐骏 in D:\vscodeProject\SimuLab\backend)
+2026-04-14T15:17:53.430+09:00 DEBUG 193628 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-04-14T15:17:53.436+09:00  INFO 193628 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : The following 1 profile is active: "dev"
+2026-04-14T15:17:57.617+09:00  INFO 193628 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-14T15:17:57.626+09:00  INFO 193628 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-14T15:17:57.760+09:00  INFO 193628 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 0 Redis repository interfaces.
+2026-04-14T15:17:59.617+09:00  INFO 193628 --- [simulab-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18082 (http)
+2026-04-14T15:17:59.644+09:00  INFO 193628 --- [simulab-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-14T15:17:59.649+09:00  INFO 193628 --- [simulab-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-04-14T15:17:59.827+09:00  INFO 193628 --- [simulab-backend] [           main] o.a.c.c.C.[.[localhost].[/simulab]       : Initializing Spring embedded WebApplicationContext
+2026-04-14T15:17:59.833+09:00  INFO 193628 --- [simulab-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5985 ms
+2026-04-14T15:17:59.982+09:00 DEBUG 193628 --- [simulab-backend] [           main] c.s.c.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.18.64.1 network interface 
+Get network interface info: name:eth20 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:20 workerId:15
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-04-14T15:18:01.512+09:00  INFO 193628 --- [simulab-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-14T15:18:02.341+09:00  INFO 193628 --- [simulab-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b9a1205
+2026-04-14T15:18:02.347+09:00  INFO 193628 --- [simulab-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-14T15:18:02.470+09:00  INFO 193628 --- [simulab-backend] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/simulab (MySQL 8.0)
+2026-04-14T15:18:02.629+09:00  INFO 193628 --- [simulab-backend] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 9 migrations (execution time 00:00.102s)
+2026-04-14T15:18:02.676+09:00  INFO 193628 --- [simulab-backend] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `simulab`: 9
+2026-04-14T15:18:02.691+09:00  INFO 193628 --- [simulab-backend] [           main] o.f.core.internal.command.DbMigrate      : Schema `simulab` is up to date. No migration necessary.
+2026-04-14T15:18:05.125+09:00  WARN 193628 --- [simulab-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 202ba892-d3c3-4c1d-a477-bb66ccc493cc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-14T15:18:05.142+09:00  INFO 193628 --- [simulab-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-14T15:18:06.696+09:00  INFO 193628 --- [simulab-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18082 (http) with context path '/simulab'
+2026-04-14T15:18:06.720+09:00  INFO 193628 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Started SimuLabBackendApplication in 14.465 seconds (process running for 15.392)
+2026-04-14T15:18:07.434+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] o.a.c.c.C.[.[localhost].[/simulab]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-14T15:18:07.435+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-14T15:18:07.442+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+JDBC Connection [HikariProxyConnection@219906310 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23a_1776147487(String), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f] from current transaction
+==>  Preparing: INSERT INTO sys_user ( id, user_code, username, password_hash, display_name, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936826458697729(Long), U-5E24AFB1C60C(String), task23a_1776147487(String), {bcrypt}$2a$10$MfuqQca52gKseNOI5ldRqOB9SltWMySqPX4IyqrU5nEpR3hMxjpCa(String), task23a_1776147487(String), ACTIVE(String), en-US(String), 0(Integer), 0(Long), 2026-04-14T15:18:08.579684500(LocalDateTime), 0(Long), 2026-04-14T15:18:08.579684500(LocalDateTime), 0(Integer), 0(Integer)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f] from current transaction
+==>  Preparing: SELECT id,role_code,role_name,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_role WHERE deleted=0 AND (role_code = ? AND deleted = ?)
+==> Parameters: USER(String), 0(Integer)
+<==    Columns: id, role_code, role_name, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2, USER, 普通用户, 平台普通用户角色, ACTIVE, 0, 2026-04-11 01:15:07, 0, 2026-04-11 01:15:07, 0, 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f] from current transaction
+==>  Preparing: INSERT INTO sys_user_role ( id, user_id, role_id, created_by, created_at ) VALUES ( ?, ?, ?, ?, ? )
+==> Parameters: 2043936826739716098(Long), 2043936826458697729(Long), 2(Long), 2043936826458697729(Long), 2026-04-14T15:18:08.666485200(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7544554f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1564900] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1600409075 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,user_code,username,password_hash,display_name,email,status,preferred_language,is_demo_account,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23a_1776147487(String), 0(Integer)
+<==    Columns: id, user_code, username, password_hash, display_name, email, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936826458697729, U-5E24AFB1C60C, task23a_1776147487, {bcrypt}$2a$10$MfuqQca52gKseNOI5ldRqOB9SltWMySqPX4IyqrU5nEpR3hMxjpCa, task23a_1776147487, null, ACTIVE, en-US, 0, 0, 2026-04-14 15:18:09, 0, 2026-04-14 15:18:09, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1564900]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dac0746] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@983439846 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT r.role_code FROM sys_role r JOIN sys_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ?
+==> Parameters: 2043936826458697729(Long)
+<==    Columns: role_code
+<==        Row: USER
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dac0746]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+JDBC Connection [HikariProxyConnection@1397000372 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23b_1776147487(String), 0(Integer)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4] from current transaction
+==>  Preparing: INSERT INTO sys_user ( id, user_code, username, password_hash, display_name, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936829637980162(Long), U-58DEFD824354(String), task23b_1776147487(String), {bcrypt}$2a$10$VIBINaTZUzU7dH5SWJf1/exwf6jaEduj6arrUbaqauSanyFt5gj8u(String), task23b_1776147487(String), ACTIVE(String), en-US(String), 0(Integer), 0(Long), 2026-04-14T15:18:09.356021400(LocalDateTime), 0(Long), 2026-04-14T15:18:09.356021400(LocalDateTime), 0(Integer), 0(Integer)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4] from current transaction
+==>  Preparing: SELECT id,role_code,role_name,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_role WHERE deleted=0 AND (role_code = ? AND deleted = ?)
+==> Parameters: USER(String), 0(Integer)
+<==    Columns: id, role_code, role_name, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2, USER, 普通用户, 平台普通用户角色, ACTIVE, 0, 2026-04-11 01:15:07, 0, 2026-04-11 01:15:07, 0, 0
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4] from current transaction
+==>  Preparing: INSERT INTO sys_user_role ( id, user_id, role_id, created_by, created_at ) VALUES ( ?, ?, ?, ?, ? )
+==> Parameters: 2043936829772197890(Long), 2043936829637980162(Long), 2(Long), 2043936829637980162(Long), 2026-04-14T15:18:09.387348300(LocalDateTime)
+<==    Updates: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bce3c4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fe6a03b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1913056383 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,user_code,username,password_hash,display_name,email,status,preferred_language,is_demo_account,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23b_1776147487(String), 0(Integer)
+<==    Columns: id, user_code, username, password_hash, display_name, email, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936829637980162, U-58DEFD824354, task23b_1776147487, {bcrypt}$2a$10$VIBINaTZUzU7dH5SWJf1/exwf6jaEduj6arrUbaqauSanyFt5gj8u, task23b_1776147487, null, ACTIVE, en-US, 0, 0, 2026-04-14 15:18:09, 0, 2026-04-14 15:18:09, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fe6a03b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69711c5d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1246928002 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT r.role_code FROM sys_role r JOIN sys_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ?
+==> Parameters: 2043936829637980162(Long)
+<==    Columns: role_code
+<==        Row: USER
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69711c5d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67f99e08] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@586882195 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,user_code,username,password_hash,display_name,email,status,preferred_language,is_demo_account,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23a_1776147487(String), 0(Integer)
+<==    Columns: id, user_code, username, password_hash, display_name, email, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936826458697729, U-5E24AFB1C60C, task23a_1776147487, {bcrypt}$2a$10$MfuqQca52gKseNOI5ldRqOB9SltWMySqPX4IyqrU5nEpR3hMxjpCa, task23a_1776147487, null, ACTIVE, en-US, 0, 0, 2026-04-14 15:18:09, 0, 2026-04-14 15:18:09, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67f99e08]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42d4e3dc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@503839624 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT r.role_code FROM sys_role r JOIN sys_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ?
+==> Parameters: 2043936826458697729(Long)
+<==    Columns: role_code
+<==        Row: USER
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42d4e3dc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@404631f8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1317128064 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,user_code,username,password_hash,display_name,email,status,preferred_language,is_demo_account,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: task23b_1776147487(String), 0(Integer)
+<==    Columns: id, user_code, username, password_hash, display_name, email, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936829637980162, U-58DEFD824354, task23b_1776147487, {bcrypt}$2a$10$VIBINaTZUzU7dH5SWJf1/exwf6jaEduj6arrUbaqauSanyFt5gj8u, task23b_1776147487, null, ACTIVE, en-US, 0, 0, 2026-04-14 15:18:09, 0, 2026-04-14 15:18:09, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@404631f8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9332f4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@489667613 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT r.role_code FROM sys_role r JOIN sys_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ?
+==> Parameters: 2043936829637980162(Long)
+<==    Columns: role_code
+<==        Row: USER
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f9332f4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a2793da] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1274856120 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM fab_layer WHERE deleted = 0 AND (deleted = ? AND (created_by = ? OR created_by = ?))
+==> Parameters: 0(Integer), 0(Long), 2043936826458697729(Long)
+<==    Columns: total
+<==        Row: 3
+<==      Total: 1
+==>  Preparing: SELECT id,layer_code,layer_name,layer_type,sequence_no,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_layer WHERE deleted=0 AND (deleted = ? AND (created_by = ? OR created_by = ?)) ORDER BY sequence_no ASC,id ASC LIMIT ?
+==> Parameters: 0(Integer), 0(Long), 2043936826458697729(Long), 1(Long)
+<==    Columns: id, layer_code, layer_name, layer_type, sequence_no, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 1, LAYER-M1, Metal 1, METAL, 10, M1 互连层, ACTIVE, 0, 2026-04-08 23:26:46, 0, 2026-04-08 23:26:46, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a2793da]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74daa2bf] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@370724851 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,layer_code,layer_name,layer_type,sequence_no,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_layer WHERE id=? AND deleted=0
+==> Parameters: 1(Long)
+<==    Columns: id, layer_code, layer_name, layer_type, sequence_no, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 1, LAYER-M1, Metal 1, METAL, 10, M1 互连层, ACTIVE, 0, 2026-04-08 23:26:46, 0, 2026-04-08 23:26:46, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74daa2bf]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bade3d1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2062423798 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,run_no,lot_id,wafer_id,layer_id,measurement_type,stage,source_type,tool_name,sampling_count,import_file_id,analysis_fingerprint,measurement_context_json,summary_json,status,created_by,created_at,updated_by,updated_at,deleted,version FROM measurement_run WHERE deleted=0 AND (analysis_fingerprint = ? AND status = ? AND deleted = ?) ORDER BY updated_at DESC,id DESC LIMIT 1
+==> Parameters: ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), COMPLETED(String), 0(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bade3d1]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7024737f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1414828894 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,lot_no,product_id,owner_user_id,is_demo,lot_status,source_type,priority_level,wafer_count,collected_at,remark,dataset_id,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_lot WHERE deleted=0 AND (lot_no = ? AND deleted = ?) LIMIT 1
+==> Parameters: LOT-R-1776147487(String), 0(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7024737f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@477f48e8] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@345203955 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO fab_lot ( id, lot_no, owner_user_id, is_demo, lot_status, source_type, priority_level, wafer_count, remark, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936833400270850(Long), LOT-R-1776147487(String), 2043936826458697729(Long), 0(Integer), READY(String), USER(String), NORMAL(String), 1(Integer), Generated by wafer config(String), 2043936826458697729(Long), 2026-04-14T15:18:10.264978700(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:10.264978700(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@477f48e8]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b211257] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1919319962 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,lot_id,wafer_no,wafer_status,slot_no,diameter_mm,notch_direction,summary_tags_json,dataset_id,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_wafer WHERE deleted=0 AND (lot_id = ? AND wafer_no = ? AND deleted = ?) LIMIT 1
+==> Parameters: 2043936833400270850(Long), W01(String), 0(Integer)
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b211257]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12bb9d09] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@630270702 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO fab_wafer ( id, lot_id, wafer_no, wafer_status, slot_no, diameter_mm, summary_tags_json, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936833559654401(Long), 2043936833400270850(Long), W01(String), READY(String), 1(Integer), 300(BigDecimal), {"source":"USER_CONFIG_GENERATED"}(String), 2043936826458697729(Long), 2026-04-14T15:18:10.296468600(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:10.296468600(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12bb9d09]
+2026-04-14T15:18:10.307+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] s.m.w.s.i.WaferAnalysisConfigServiceImpl : [wafer-config] generate fingerprint=ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3 reuseHit=false reusedRunId=null reusedTaskId=null
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187a7dd2] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1449654273 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO measurement_run ( id, run_no, lot_id, wafer_id, layer_id, measurement_type, stage, source_type, tool_name, sampling_count, analysis_fingerprint, measurement_context_json, status, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936833635151873(Long), MRG-20260414151810-4E5F(String), 2043936833400270850(Long), 2043936833559654401(Long), 1(Long), OVERLAY(String), PRE_ETCH(String), USER_GENERATED(String), CONFIG_GENERATOR(String), 0(Integer), ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), {"axisRange":"0-250","circleCenter":"125,125","circleRadius":"125","keyParameter":"scannerCorrectionGain"}(String), COMPLETED(String), 2043936826458697729(Long), 2026-04-14T15:18:10.311426500(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:10.311426500(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187a7dd2]
+2026-04-14T15:18:25.781+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] s.m.w.s.i.WaferAnalysisConfigServiceImpl : [wafer-config] dense-generation runId=2043936833635151873 waferId=2043936833559654401 layerId=1 points=196321 parallelism=8 elapsedMs=15460 memoryUsedMb=377
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@95231d3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1225600159 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO simulation_task ( id, task_no, task_name, lot_id, layer_id, scenario_type, status, priority_level, idempotency_key, input_snapshot_json, execution_context_json, result_summary_json, requested_by, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936899070488578(Long), TSK-WAFER-20260414151825-0FC7(String), Wafer Config Analysis - reuse-check(String), 2043936833400270850(Long), 1(Long), WAFER_CONFIG_ANALYSIS(String), SUCCESS(String), NORMAL(String), WAFER_CONFIG:ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), {"configName":"reuse-check","lotNo":"LOT-R-1776147487","waferNo":"W01","layerId":1,"scannerCorrectionGain":1.02,"gridStep":0.5}(String), {"measurementRunId":2043936833635151873,"analysisFingerprint":"ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3"}(String), {"meanOverlay":2.2778,"maxOverlay":6.2062,"p95Overlay":4.3183,"stdOverlay":1.1219,"passRate":1.0000,"overallQuality":"GOOD","summaryText":"Overall quality assessment: good. Key KPIs: pass rate 100.0%, P95 overlay 4.3183 nm, and standard deviation 1.1219 nm. Stability is stable, edge risk is low, and outlier density is low. Parameter interpretation: scannerCorrectionGain=1.02 controls how strongly the spatial distortion field is amplified across the wafer; current sensitivity is low. Term explanation: P95 means 95% of points are below this value; outlier density is the abnormal-point ratio; edge risk indicates the probability of stronger deviation near wafer boundary. Risk interpretation: threshold baseline is 8.2 nm; sustained values above this level usually narrow process window and increase yield fluctuation risk. Recommended action: Keep current setting and monitor edge trend."}(String), 2043936826458697729(Long), 2043936826458697729(Long), 2026-04-14T15:18:25.909517(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:25.909517(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@95231d3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@221296ca] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@978778098 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO simulation_result_summary ( id, task_id, wafer_id, layer_id, measurement_run_id, mean_overlay, max_overlay, min_overlay, std_overlay, p95_overlay, pass_rate, pass_flag, warning_level, chart_snapshot_json, created_by ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936899145986050(Long), 2043936899070488578(Long), 2043936833559654401(Long), 1(Long), 2043936833635151873(Long), 2.2778(BigDecimal), 6.2062(BigDecimal), 0(BigDecimal), 1.1219(BigDecimal), 4.3183(BigDecimal), 1.0000(BigDecimal), 1(Integer), LOW(String), {"summaryText":"Overall quality assessment: good. Key KPIs: pass rate 100.0%, P95 overlay 4.3183 nm, and standard deviation 1.1219 nm. Stability is stable, edge risk is low, and outlier density is low. Parameter interpretation: scannerCorrectionGain=1.02 controls how strongly the spatial distortion field is amplified across the wafer; current sensitivity is low. Term explanation: P95 means 95% of points are below this value; outlier density is the abnormal-point ratio; edge risk indicates the probability of stronger deviation near wafer boundary. Risk interpretation: threshold baseline is 8.2 nm; sustained values above this level usually narrow process window and increase yield fluctuation risk. Recommended action: Keep current setting and monitor edge trend."}(String), 2043936826458697729(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@221296ca]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@690c7a15] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@832064094 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,task_no,task_name,lot_id,layer_id,recipe_version_id,scenario_type,status,priority_level,idempotency_key,input_snapshot_json,execution_context_json,result_summary_json,error_message,requested_by,created_by,created_at,updated_by,updated_at,deleted,version FROM simulation_task WHERE deleted=0 AND (created_by = ? AND deleted = ?) ORDER BY created_at ASC,id ASC
+==> Parameters: 2043936826458697729(Long), 0(Integer)
+<==    Columns: id, task_no, task_name, lot_id, layer_id, recipe_version_id, scenario_type, status, priority_level, idempotency_key, input_snapshot_json, execution_context_json, result_summary_json, error_message, requested_by, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936899070488578, TSK-WAFER-20260414151825-0FC7, Wafer Config Analysis - reuse-check, 2043936833400270850, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 2043936826458697729, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@690c7a15]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5430f2a5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@213562773 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: UPDATE measurement_run SET run_no=?, lot_id=?, wafer_id=?, layer_id=?, measurement_type=?, stage=?, source_type=?, tool_name=?, sampling_count=?, analysis_fingerprint=?, measurement_context_json=?, summary_json=?, status=?, created_by=?, created_at=?, updated_by=?, updated_at=? WHERE id=? AND deleted=0
+==> Parameters: MRG-20260414151810-4E5F(String), 2043936833400270850(Long), 2043936833559654401(Long), 1(Long), OVERLAY(String), PRE_ETCH(String), USER_GENERATED(String), CONFIG_GENERATOR(String), 196321(Integer), ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), {"axisRange":"0-250","circleCenter":"125,125","circleRadius":"125","keyParameter":"scannerCorrectionGain"}(String), {"meanOverlay":2.2778,"maxOverlay":6.2062,"p95Overlay":4.3183,"stdOverlay":1.1219,"passRate":1.0000,"overallQuality":"GOOD","summaryText":"Overall quality assessment: good. Key KPIs: pass rate 100.0%, P95 overlay 4.3183 nm, and standard deviation 1.1219 nm. Stability is stable, edge risk is low, and outlier density is low. Parameter interpretation: scannerCorrectionGain=1.02 controls how strongly the spatial distortion field is amplified across the wafer; current sensitivity is low. Term explanation: P95 means 95% of points are below this value; outlier density is the abnormal-point ratio; edge risk indicates the probability of stronger deviation near wafer boundary. Risk interpretation: threshold baseline is 8.2 nm; sustained values above this level usually narrow process window and increase yield fluctuation risk. Recommended action: Keep current setting and monitor edge trend."}(String), COMPLETED(String), 2043936826458697729(Long), 2026-04-14T15:18:10.311426500(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:10.311426500(LocalDateTime), 2043936833635151873(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5430f2a5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5b8a23] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@842466887 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO wafer_analysis_config ( id, config_no, config_name, lot_no, wafer_no, layer_id, measurement_type, stage, scanner_correction_gain, overlay_base_nm, edge_gradient, local_hotspot_strength, noise_level, grid_step, outlier_threshold, status, last_measurement_run_id, last_task_id, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936899422810114(Long), CFG-U-20260414151825-3FA0(String), reuse-check(String), LOT-R-1776147487(String), W01(String), 1(Long), OVERLAY(String), PRE_ETCH(String), 1.02(BigDecimal), 3.3(BigDecimal), 1.4(BigDecimal), 1.1(BigDecimal), 0.18(BigDecimal), 0.5(BigDecimal), 8.2(BigDecimal), ACTIVE(String), 2043936833635151873(Long), 2043936899070488578(Long), 2043936826458697729(Long), 2026-04-14T15:18:26.000450800(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:26.000450800(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5b8a23]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e46dc9d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@482090908 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,config_no,config_name,description,lot_no,wafer_no,layer_id,measurement_type,stage,scanner_correction_gain,overlay_base_nm,edge_gradient,local_hotspot_strength,noise_level,grid_step,outlier_threshold,status,last_measurement_run_id,last_task_id,config_summary_json,created_by,created_at,updated_by,updated_at,deleted,version FROM wafer_analysis_config WHERE deleted=0 AND (created_by = ? AND deleted = ?) ORDER BY created_at ASC,id ASC
+==> Parameters: 2043936826458697729(Long), 0(Integer)
+<==    Columns: id, config_no, config_name, description, lot_no, wafer_no, layer_id, measurement_type, stage, scanner_correction_gain, overlay_base_nm, edge_gradient, local_hotspot_strength, noise_level, grid_step, outlier_threshold, status, last_measurement_run_id, last_task_id, config_summary_json, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936899422810114, CFG-U-20260414151825-3FA0, reuse-check, null, LOT-R-1776147487, W01, 1, OVERLAY, PRE_ETCH, 1.0200, 3.3000, 1.4000, 1.1000, 0.1800, 0.5000, 8.2000, ACTIVE, 2043936833635151873, 2043936899070488578, <<BLOB>>, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e46dc9d]
+2026-04-14T15:18:26.045+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-1] s.m.w.s.i.WaferAnalysisConfigServiceImpl : [wafer-config] generate locale=en-US fingerprint=ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3 taskId=2043936899070488578 runId=2043936833635151873 points=196321 reuseHit=false reusedRunId=null reusedTaskId=null elapsedMs=15829 memoryBeforeMb=39 memoryAfterMb=383
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c4ded6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@174551636 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,layer_code,layer_name,layer_type,sequence_no,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_layer WHERE id=? AND deleted=0
+==> Parameters: 1(Long)
+<==    Columns: id, layer_code, layer_name, layer_type, sequence_no, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 1, LAYER-M1, Metal 1, METAL, 10, M1 互连层, ACTIVE, 0, 2026-04-08 23:26:46, 0, 2026-04-08 23:26:46, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14c4ded6]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25aad134] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@607758607 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,run_no,lot_id,wafer_id,layer_id,measurement_type,stage,source_type,tool_name,sampling_count,import_file_id,analysis_fingerprint,measurement_context_json,summary_json,status,created_by,created_at,updated_by,updated_at,deleted,version FROM measurement_run WHERE deleted=0 AND (analysis_fingerprint = ? AND status = ? AND deleted = ?) ORDER BY updated_at DESC,id DESC LIMIT 1
+==> Parameters: ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), COMPLETED(String), 0(Integer)
+<==    Columns: id, run_no, lot_id, wafer_id, layer_id, measurement_type, stage, source_type, tool_name, sampling_count, import_file_id, analysis_fingerprint, measurement_context_json, summary_json, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936833635151873, MRG-20260414151810-4E5F, 2043936833400270850, 2043936833559654401, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3, <<BLOB>>, <<BLOB>>, COMPLETED, 2043936826458697729, 2026-04-14 15:18:10, 2043936826458697729, 2026-04-14 15:18:10, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25aad134]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@270e1471] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@671715268 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,task_id,wafer_id,layer_id,measurement_run_id,mean_overlay,max_overlay,min_overlay,std_overlay,p95_overlay,pass_rate,pass_flag,warning_level,chart_snapshot_json,created_at,created_by FROM simulation_result_summary WHERE (measurement_run_id = ?) ORDER BY created_at DESC,id DESC LIMIT 1
+==> Parameters: 2043936833635151873(Long)
+<==    Columns: id, task_id, wafer_id, layer_id, measurement_run_id, mean_overlay, max_overlay, min_overlay, std_overlay, p95_overlay, pass_rate, pass_flag, warning_level, chart_snapshot_json, created_at, created_by
+<==        Row: 2043936899145986050, 2043936899070488578, 2043936833559654401, 1, 2043936833635151873, 2.277800, 6.206200, 0.000000, 1.121900, 4.318300, 1.0000, 1, LOW, <<BLOB>>, 2026-04-14 15:18:25, 2043936826458697729
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@270e1471]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ba4e3cc] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1337405139 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,lot_no,product_id,owner_user_id,is_demo,lot_status,source_type,priority_level,wafer_count,collected_at,remark,dataset_id,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_lot WHERE deleted=0 AND (lot_no = ? AND deleted = ?) LIMIT 1
+==> Parameters: LOT-R-1776147487(String), 0(Integer)
+<==    Columns: id, lot_no, product_id, owner_user_id, is_demo, lot_status, source_type, priority_level, wafer_count, collected_at, remark, dataset_id, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936833400270850, LOT-R-1776147487, null, 2043936826458697729, 0, READY, USER, NORMAL, 1, null, Generated by wafer config, null, 2043936826458697729, 2026-04-14 15:18:10, 2043936826458697729, 2026-04-14 15:18:10, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ba4e3cc]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@109ab577] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@481074731 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,lot_id,wafer_no,wafer_status,slot_no,diameter_mm,notch_direction,summary_tags_json,dataset_id,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_wafer WHERE deleted=0 AND (lot_id = ? AND wafer_no = ? AND deleted = ?) LIMIT 1
+==> Parameters: 2043936833400270850(Long), W01(String), 0(Integer)
+<==    Columns: id, lot_id, wafer_no, wafer_status, slot_no, diameter_mm, notch_direction, summary_tags_json, dataset_id, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936833559654401, 2043936833400270850, W01, READY, 1, 300.00, null, <<BLOB>>, null, 2043936826458697729, 2026-04-14 15:18:10, 2043936826458697729, 2026-04-14 15:18:10, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@109ab577]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7689a4c5] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2116058478 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO simulation_task ( id, task_no, task_name, lot_id, layer_id, scenario_type, status, priority_level, idempotency_key, input_snapshot_json, execution_context_json, result_summary_json, requested_by, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936900051955713(Long), TSK-WAFER-20260414151826-3FC7(String), Wafer Config Analysis (Reused) - reuse-check(String), 2043936833400270850(Long), 1(Long), WAFER_CONFIG_ANALYSIS(String), SUCCESS(String), NORMAL(String), WAFER_CONFIG_REUSED:ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), {"configName":"reuse-check","lotNo":"LOT-R-1776147487","waferNo":"W01","layerId":1,"scannerCorrectionGain":1.02,"gridStep":0.5,"reuse":true}(String), {"measurementRunId":2043936833635151873,"analysisFingerprint":"ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3","reusedTaskId":2043936899070488578}(String), {"meanOverlay":2.2778,"maxOverlay":6.2062,"p95Overlay":4.3183,"stdOverlay":1.1219,"passRate":1.0000,"overallQuality":"GOOD","summaryText":"Overall quality assessment: good. Key KPIs: pass rate 100.0%, P95 overlay 4.3183 nm, and standard deviation 1.1219 nm. Stability is stable, edge risk is low, and outlier density is low. Parameter interpretation: scannerCorrectionGain=1.02 controls how strongly the spatial distortion field is amplified across the wafer; current sensitivity is low. Term explanation: P95 means 95% of points are below this value; outlier density is the abnormal-point ratio; edge risk indicates the probability of stronger deviation near wafer boundary. Risk interpretation: threshold baseline is 8.2 nm; sustained values above this level usually narrow process window and increase yield fluctuation risk. Recommended action: Keep current setting and monitor edge trend."}(String), 2043936826458697729(Long), 2043936826458697729(Long), 2026-04-14T15:18:26.144469900(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:26.144469900(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7689a4c5]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a25f1dd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@287940238 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO simulation_result_summary ( id, task_id, wafer_id, layer_id, measurement_run_id, mean_overlay, max_overlay, min_overlay, std_overlay, p95_overlay, pass_rate, pass_flag, warning_level, chart_snapshot_json, created_by ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936900119064577(Long), 2043936900051955713(Long), 2043936833559654401(Long), 1(Long), 2043936833635151873(Long), 2.2778(BigDecimal), 6.2062(BigDecimal), 0(BigDecimal), 1.1219(BigDecimal), 4.3183(BigDecimal), 1.0000(BigDecimal), 1(Integer), LOW(String), {"summaryText":"Overall quality assessment: good. Key KPIs: pass rate 100.0%, P95 overlay 4.3183 nm, and standard deviation 1.1219 nm. Stability is stable, edge risk is low, and outlier density is low. Parameter interpretation: scannerCorrectionGain=1.02 controls how strongly the spatial distortion field is amplified across the wafer; current sensitivity is low. Term explanation: P95 means 95% of points are below this value; outlier density is the abnormal-point ratio; edge risk indicates the probability of stronger deviation near wafer boundary. Risk interpretation: threshold baseline is 8.2 nm; sustained values above this level usually narrow process window and increase yield fluctuation risk. Recommended action: Keep current setting and monitor edge trend."}(String), 2043936826458697729(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a25f1dd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@635d22e6] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1971486031 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,task_no,task_name,lot_id,layer_id,recipe_version_id,scenario_type,status,priority_level,idempotency_key,input_snapshot_json,execution_context_json,result_summary_json,error_message,requested_by,created_by,created_at,updated_by,updated_at,deleted,version FROM simulation_task WHERE deleted=0 AND (created_by = ? AND deleted = ?) ORDER BY created_at ASC,id ASC
+==> Parameters: 2043936826458697729(Long), 0(Integer)
+<==    Columns: id, task_no, task_name, lot_id, layer_id, recipe_version_id, scenario_type, status, priority_level, idempotency_key, input_snapshot_json, execution_context_json, result_summary_json, error_message, requested_by, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936899070488578, TSK-WAFER-20260414151825-0FC7, Wafer Config Analysis - reuse-check, 2043936833400270850, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 2043936826458697729, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==        Row: 2043936900051955713, TSK-WAFER-20260414151826-3FC7, Wafer Config Analysis (Reused) - reuse-check, 2043936833400270850, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG_REUSED:ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 2043936826458697729, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@635d22e6]
+2026-04-14T15:18:26.176+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-3] s.m.w.s.i.WaferAnalysisConfigServiceImpl : [wafer-config] generate fingerprint=ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3 reuseHit=true reusedRunId=2043936833635151873 reusedTaskId=2043936899070488578
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c6a161] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2004535363 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: INSERT INTO wafer_analysis_config ( id, config_no, config_name, lot_no, wafer_no, layer_id, measurement_type, stage, scanner_correction_gain, overlay_base_nm, edge_gradient, local_hotspot_strength, noise_level, grid_step, outlier_threshold, status, last_measurement_run_id, last_task_id, created_by, created_at, updated_by, updated_at ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+==> Parameters: 2043936900194562049(Long), CFG-U-20260414151826-B50B(String), reuse-check(String), LOT-R-1776147487(String), W01(String), 1(Long), OVERLAY(String), PRE_ETCH(String), 1.02(BigDecimal), 3.3(BigDecimal), 1.4(BigDecimal), 1.1(BigDecimal), 0.18(BigDecimal), 0.5(BigDecimal), 8.2(BigDecimal), ACTIVE(String), 2043936833635151873(Long), 2043936900051955713(Long), 2043936826458697729(Long), 2026-04-14T15:18:26.188746100(LocalDateTime), 2043936826458697729(Long), 2026-04-14T15:18:26.188746100(LocalDateTime)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c6a161]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b2c4edd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1561804656 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,config_no,config_name,description,lot_no,wafer_no,layer_id,measurement_type,stage,scanner_correction_gain,overlay_base_nm,edge_gradient,local_hotspot_strength,noise_level,grid_step,outlier_threshold,status,last_measurement_run_id,last_task_id,config_summary_json,created_by,created_at,updated_by,updated_at,deleted,version FROM wafer_analysis_config WHERE deleted=0 AND (created_by = ? AND deleted = ?) ORDER BY created_at ASC,id ASC
+==> Parameters: 2043936826458697729(Long), 0(Integer)
+<==    Columns: id, config_no, config_name, description, lot_no, wafer_no, layer_id, measurement_type, stage, scanner_correction_gain, overlay_base_nm, edge_gradient, local_hotspot_strength, noise_level, grid_step, outlier_threshold, status, last_measurement_run_id, last_task_id, config_summary_json, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936899422810114, CFG-U-20260414151825-3FA0, reuse-check, null, LOT-R-1776147487, W01, 1, OVERLAY, PRE_ETCH, 1.0200, 3.3000, 1.4000, 1.1000, 0.1800, 0.5000, 8.2000, ACTIVE, 2043936833635151873, 2043936899070488578, <<BLOB>>, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==        Row: 2043936900194562049, CFG-U-20260414151826-B50B, reuse-check, null, LOT-R-1776147487, W01, 1, OVERLAY, PRE_ETCH, 1.0200, 3.3000, 1.4000, 1.1000, 0.1800, 0.5000, 8.2000, ACTIVE, 2043936833635151873, 2043936900051955713, <<BLOB>>, 2043936826458697729, 2026-04-14 15:18:26, 2043936826458697729, 2026-04-14 15:18:26, 0, 0
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b2c4edd]
+2026-04-14T15:18:26.208+09:00  INFO 193628 --- [simulab-backend] [io-18082-exec-3] s.m.w.s.i.WaferAnalysisConfigServiceImpl : [wafer-config] generate locale=en-US fingerprint=ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3 taskId=2043936900051955713 runId=2043936833635151873 points=196321 reuseHit=true reusedRunId=2043936833635151873 reusedTaskId=2043936899070488578 elapsedMs=123 memoryBeforeMb=385 memoryAfterMb=386
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23359000] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1184521657 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,layer_code,layer_name,layer_type,sequence_no,description,status,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_layer WHERE id=? AND deleted=0
+==> Parameters: 1(Long)
+<==    Columns: id, layer_code, layer_name, layer_type, sequence_no, description, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 1, LAYER-M1, Metal 1, METAL, 10, M1 互连层, ACTIVE, 0, 2026-04-08 23:26:46, 0, 2026-04-08 23:26:46, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23359000]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3da574b4] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@849303184 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,run_no,lot_id,wafer_id,layer_id,measurement_type,stage,source_type,tool_name,sampling_count,import_file_id,analysis_fingerprint,measurement_context_json,summary_json,status,created_by,created_at,updated_by,updated_at,deleted,version FROM measurement_run WHERE deleted=0 AND (analysis_fingerprint = ? AND status = ? AND deleted = ?) ORDER BY updated_at DESC,id DESC LIMIT 1
+==> Parameters: ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3(String), COMPLETED(String), 0(Integer)
+<==    Columns: id, run_no, lot_id, wafer_id, layer_id, measurement_type, stage, source_type, tool_name, sampling_count, import_file_id, analysis_fingerprint, measurement_context_json, summary_json, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936833635151873, MRG-20260414151810-4E5F, 2043936833400270850, 2043936833559654401, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, ea667a87b09949956eae87b13edf694ff69c822b52ce1c42d4b3424d5f93f8c3, <<BLOB>>, <<BLOB>>, COMPLETED, 2043936826458697729, 2026-04-14 15:18:10, 2043936826458697729, 2026-04-14 15:18:10, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3da574b4]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d01184] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1455873534 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,task_id,wafer_id,layer_id,measurement_run_id,mean_overlay,max_overlay,min_overlay,std_overlay,p95_overlay,pass_rate,pass_flag,warning_level,chart_snapshot_json,created_at,created_by FROM simulation_result_summary WHERE (measurement_run_id = ?) ORDER BY created_at DESC,id DESC LIMIT 1
+==> Parameters: 2043936833635151873(Long)
+<==    Columns: id, task_id, wafer_id, layer_id, measurement_run_id, mean_overlay, max_overlay, min_overlay, std_overlay, p95_overlay, pass_rate, pass_flag, warning_level, chart_snapshot_json, created_at, created_by
+<==        Row: 2043936900119064577, 2043936900051955713, 2043936833559654401, 1, 2043936833635151873, 2.277800, 6.206200, 0.000000, 1.121900, 4.318300, 1.0000, 1, LOW, <<BLOB>>, 2026-04-14 15:18:26, 2043936826458697729
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40d01184]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d0d9881] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@487718549 wrapping com.mysql.cj.jdbc.ConnectionImpl@6b9a1205] will not be managed by Spring
+==>  Preparing: SELECT id,lot_no,product_id,owner_user_id,is_demo,lot_status,source_type,priority_level,wafer_count,collected_at,remark,dataset_id,created_by,created_at,updated_by,updated_at,deleted,version FROM fab_lot WHERE deleted=0 AND (lot_no = ? AND deleted = ?) LIMIT 1
+==> Parameters: LOT-R-1776147487(String), 0(Integer)
+<==    Columns: id, lot_no, product_id, owner_user_id, is_demo, lot_status, source_type, priority_level, wafer_count, collected_at, remark, dataset_id, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 2043936833400270850, LOT-R-1776147487, null, 2043936826458697729, 0, READY, USER, NORMAL, 1, null, Generated by wafer config, null, 2043936826458697729, 2026-04-14 15:18:10, 2043936826458697729, 2026-04-14 15:18:10, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d0d9881]

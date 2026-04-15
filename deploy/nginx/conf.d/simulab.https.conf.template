@@ -1,0 +1,58 @@
+# 使用方式：
+# 1) 按需修改 server_name 和证书路径
+# 2) 复制为 simulab.https.conf 后重启 nginx 容器
+# 3) 建议保留 simulab.http.conf 仅用于 ACME challenge 与 80->443 跳转
+
+server {
+    listen 80;
+    server_name simulab.top www.simulab.top;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name simulab.top www.simulab.top;
+
+    ssl_certificate /etc/letsencrypt/live/simulab.top/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/simulab.top/privkey.pem;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_tickets off;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers off;
+
+    location /api/ {
+        proxy_pass http://simulab_backend/simulab/api/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /simulab/ {
+        proxy_pass http://simulab_backend/simulab/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location / {
+        proxy_pass http://simulab_frontend/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

@@ -1,0 +1,8 @@
+.git
+.gitignore
+target
+.m2repo
+.m2repo-run
+*.log
+*.ps1
+java.cp.txt

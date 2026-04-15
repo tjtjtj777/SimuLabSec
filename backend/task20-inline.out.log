@@ -1,0 +1,322 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-04-12T10:39:28.632+09:00  INFO 97496 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Starting SimuLabBackendApplication using Java 17.0.18 with PID 97496 (D:\vscodeProject\SimuLab\backend\target\classes started by ÌÆ¿¥ in D:\vscodeProject\SimuLab\backend)
+2026-04-12T10:39:28.637+09:00 DEBUG 97496 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-04-12T10:39:28.638+09:00  INFO 97496 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : The following 1 profile is active: "dev"
+2026-04-12T10:39:30.713+09:00  INFO 97496 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-12T10:39:30.718+09:00  INFO 97496 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-12T10:39:30.807+09:00  INFO 97496 --- [simulab-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 0 Redis repository interfaces.
+2026-04-12T10:39:32.293+09:00  INFO 97496 --- [simulab-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18084 (http)
+2026-04-12T10:39:32.320+09:00  INFO 97496 --- [simulab-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-12T10:39:32.321+09:00  INFO 97496 --- [simulab-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-04-12T10:39:32.448+09:00  INFO 97496 --- [simulab-backend] [           main] o.a.c.c.C.[.[localhost].[/simulab]       : Initializing Spring embedded WebApplicationContext
+2026-04-12T10:39:32.452+09:00  INFO 97496 --- [simulab-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3714 ms
+2026-04-12T10:39:32.553+09:00 DEBUG 97496 --- [simulab-backend] [           main] c.s.c.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /172.18.64.1 network interface 
+Get network interface info: name:eth20 (Hyper-V Virtual Ethernet Adapter)
+Initialization Sequence datacenterId:20 workerId:21
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-04-12T10:39:33.846+09:00  INFO 97496 --- [simulab-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-12T10:39:34.334+09:00  INFO 97496 --- [simulab-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3
+2026-04-12T10:39:34.339+09:00  INFO 97496 --- [simulab-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-12T10:39:34.431+09:00  INFO 97496 --- [simulab-backend] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/simulab (MySQL 8.0)
+2026-04-12T10:39:34.557+09:00  INFO 97496 --- [simulab-backend] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 8 migrations (execution time 00:00.076s)
+2026-04-12T10:39:34.592+09:00  INFO 97496 --- [simulab-backend] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `simulab`: 8
+2026-04-12T10:39:34.598+09:00  INFO 97496 --- [simulab-backend] [           main] o.f.core.internal.command.DbMigrate      : Schema `simulab` is up to date. No migration necessary.
+2026-04-12T10:39:36.486+09:00  WARN 97496 --- [simulab-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: be5975d7-d731-4732-b5d0-3e9ce1433171
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-12T10:39:36.508+09:00  INFO 97496 --- [simulab-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-12T10:39:37.756+09:00  INFO 97496 --- [simulab-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18084 (http) with context path '/simulab'
+2026-04-12T10:39:37.777+09:00  INFO 97496 --- [simulab-backend] [           main] com.simulab.SimuLabBackendApplication    : Started SimuLabBackendApplication in 9.898 seconds (process running for 10.514)
+2026-04-12T10:39:39.015+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-1] o.a.c.c.C.[.[localhost].[/simulab]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-12T10:39:39.017+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-12T10:39:39.020+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1050765f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1597646647 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT id,user_code,username,password_hash,display_name,email,status,preferred_language,is_demo_account,created_by,created_at,updated_by,updated_at,deleted,version FROM sys_user WHERE deleted=0 AND (username = ? AND deleted = ?)
+==> Parameters: demo(String), 0(Integer)
+<==    Columns: id, user_code, username, password_hash, display_name, email, status, preferred_language, is_demo_account, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 1, U-DEMO-001, demo, {bcrypt}$2b$10$2LPf38WfpS4bNY6ach91EuUcL3g6rmicVXbSbYITpILurIrNMFIW2, Demo Engineer, demo@simulab.local, ACTIVE, en-US, 1, 0, 2026-04-08 23:26:46, 0, 2026-04-11 01:15:07, 0, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1050765f]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f525b4c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@360602764 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT r.role_code FROM sys_role r JOIN sys_user_role ur ON ur.role_id = r.id WHERE ur.user_id = ?
+==> Parameters: 1(Long)
+<==    Columns: role_code
+<==        Row: ADMIN
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4f525b4c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18c0e52b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@684606550 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT id,task_no,task_name,lot_id,layer_id,recipe_version_id,scenario_type,status,priority_level,idempotency_key,input_snapshot_json,execution_context_json,result_summary_json,error_message,requested_by,created_by,created_at,updated_by,updated_at,deleted,version FROM simulation_task WHERE deleted=0 AND ((created_by = ? OR created_by = ?) AND deleted = ?) ORDER BY created_by ASC,created_at DESC,id DESC
+==> Parameters: 0(Long), 1(Long), 0(Integer)
+<==    Columns: id, task_no, task_name, lot_id, layer_id, recipe_version_id, scenario_type, status, priority_level, idempotency_key, input_snapshot_json, execution_context_json, result_summary_json, error_message, requested_by, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 13, TASK-RICH-DRIFT-AFTER, Dose drift after tuning, 8, 3, 2, DRIFT, SUCCESS, HIGH, TASK-RICH-DRIFT-AFTER, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 12, TASK-RICH-DRIFT-BEFORE, Dose drift before tuning, 8, 3, 1, DRIFT, SUCCESS, HIGH, TASK-RICH-DRIFT-BEFORE, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 11, TASK-RICH-OUTLIER-001, Edge hotspot inspection, 7, 2, 1, STRESS, SUCCESS, HIGH, TASK-RICH-OUTLIER-001, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 10, TASK-RICH-STABLE-001, Stable overlay dense map, 6, 1, 1, NORMAL, SUCCESS, NORMAL, TASK-RICH-STABLE-001, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 5, TASK-DEMO-004, Via overlay tuning run, 1, 2, 2, NORMAL, SUCCESS, HIGH, TASK-DEMO-004, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 12:57:15, 0, 2026-04-09 12:57:15, 0, 0
+<==        Row: 3, TASK-DEMO-003, Focus-dose correlation run, 1, 3, 1, NORMAL, FAILED, NORMAL, TASK-DEMO-003, <<BLOB>>, <<BLOB>>, <<BLOB>>, Dose drift exceeds control limit, 1, 0, 2026-04-09 11:49:52, 0, 2026-04-09 11:49:52, 0, 0
+<==        Row: 2, TASK-DEMO-002, Overlay stress scenario, 2, 2, 2, STRESS, RUNNING, HIGH, TASK-DEMO-002, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 11:49:52, 0, 2026-04-09 11:49:52, 0, 0
+<==        Row: 1, TASK-DEMO-001, Overlay baseline sweep, 1, 1, 1, NORMAL, SUCCESS, NORMAL, TASK-DEMO-001, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 0, 2026-04-09 11:49:52, 0, 2026-04-09 11:49:52, 0, 0
+<==        Row: 2043135141419266050, TSK-WAFER-20260412101231-2E70, Wafer Config Analysis - Demo Edge Sensitive, 2043135082992611330, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041210:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-12 10:12:32, 1, 2026-04-12 10:12:32, 0, 0
+<==        Row: 2043128104111157249, TSK-WAFER-20260412094434-BE93, Wafer Config Analysis - TASK-DEMO-003, 2043128040852664322, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041209:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-12 09:44:34, 1, 2026-04-12 09:44:34, 0, 0
+<==        Row: 2042985154823688194, TSK-WAFER-20260412001632-B743, Wafer Config Analysis - My Wafer Baseline, 2042983567254458369, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041200:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-12 00:16:32, 1, 2026-04-12 00:16:32, 0, 0
+<==        Row: 2042984385735135233, TSK-WAFER-20260412001329-5A85, Wafer Config Analysis - My Wafer Baseline, 2042983567254458369, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041200:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-12 00:13:29, 1, 2026-04-12 00:13:29, 0, 0
+<==        Row: 2042983629174968322, TSK-WAFER-20260412001028-FD76, Wafer Config Analysis - TASK-DEMO-003, 2042983567254458369, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041200:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-12 00:10:29, 1, 2026-04-12 00:10:29, 0, 0
+<==        Row: 2042979593839255554, TSK-WAFER-20260411235426-AA1C, Wafer Config Analysis - Task18-EN-235414, 2042979590831939586, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-T18-EN-235414:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 23:54:27, 1, 2026-04-11 23:54:27, 0, 0
+<==        Row: 2042979590483812353, TSK-WAFER-20260411235425-72D6, Wafer Config Analysis - Task18-ZH-235414, 2042979543985758209, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-T18-ZH-235414:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 23:54:26, 1, 2026-04-11 23:54:26, 0, 0
+<==        Row: 2042969288065277954, TSK-WAFER-20260411231329-4D67, Wafer Config Analysis - CFG-DEMO-STABLE, 2042969285439643649, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041123:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 23:13:29, 1, 2026-04-11 23:13:29, 0, 0
+<==        Row: 2042964008069881857, TSK-WAFER-20260411225230-E3B0, Wafer Config Analysis - Focus-dose correlation run, 2042964005213560833, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041122:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 22:52:31, 1, 2026-04-11 22:52:31, 0, 0
+<==        Row: 2042949933810180097, TSK-WAFER-20260411215635-29E0, Wafer Config Analysis - My Wafer Baseline, 2042937592720777217, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041121:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 21:56:35, 1, 2026-04-11 21:56:35, 0, 0
+<==        Row: 2042948746289471490, TSK-WAFER-20260411215151-A438, Wafer Config Analysis - Demo Stable Baseline, 2042937592720777217, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041121:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 21:51:52, 1, 2026-04-11 21:51:52, 0, 0
+<==        Row: 2042947853900963841, TSK-WAFER-20260411214819-093A, Wafer Config Analysis - Demo Stable Baseline, 2042937592720777217, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041121:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 21:48:19, 1, 2026-04-11 21:48:19, 0, 0
+<==        Row: 2042937598810906626, TSK-WAFER-20260411210734-594A, Wafer Config Analysis - My Wafer Baseline, 2042937592720777217, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041121:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 21:07:34, 1, 2026-04-11 21:07:34, 0, 0
+<==        Row: 2042931686968754177, TSK-WAFER-20260411204404-46FA, Wafer Config Analysis - My Wafer Baseline, 2042926712146722817, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041120:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:44:05, 1, 2026-04-11 20:44:05, 0, 0
+<==        Row: 2042930334028890113, TSK-WAFER-20260411203842-D98E, Wafer Config Analysis - My Wafer Baseline, 2042926712146722817, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041120:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:38:42, 1, 2026-04-11 20:38:42, 0, 0
+<==        Row: 2042927093417345026, TSK-WAFER-20260411202549-46D1, Wafer Config Analysis - Demo Edge Sensitive, 2042926712146722817, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041120:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:25:49, 1, 2026-04-11 20:25:49, 0, 0
+<==        Row: 2042927014677676033, TSK-WAFER-20260411202530-8AF7, Wafer Config Analysis - Demo Edge Sensitive, 2042926712146722817, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041120:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:25:31, 1, 2026-04-11 20:25:31, 0, 0
+<==        Row: 2042926716752068609, TSK-WAFER-20260411202419-EAC1, Wafer Config Analysis - My Wafer Baseline, 2042926712146722817, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041120:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:24:20, 1, 2026-04-11 20:24:20, 0, 0
+<==        Row: 2042924219153096705, TSK-WAFER-20260411201424-9342, Wafer Config Analysis - Task17 Verify Config, 2042918499007377409, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-T17-001:W17, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:14:24, 1, 2026-04-11 20:14:24, 0, 0
+<==        Row: 2042924032917610498, TSK-WAFER-20260411201339-C7D5, Wafer Config Analysis - Task17 speed3, 2042924026747789314, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-T17-SPEED3:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:13:40, 1, 2026-04-11 20:13:40, 0, 0
+<==        Row: 2042923777841020929, TSK-WAFER-20260411201238-4449, Wafer Config Analysis - Task17 speed2, 2042922704237608962, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-T17-SPEED2:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:12:39, 1, 2026-04-11 20:12:39, 0, 0
+<==        Row: 2042922330055340033, TSK-WAFER-20260411200653-D06B, Wafer Config Analysis - Task17 speed, 2042921265327075329, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-T17-SPEED:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 20:06:54, 1, 2026-04-11 20:06:54, 0, 0
+<==        Row: 2042911711688216577, TSK-WAFER-20260411192442-CD2F, Wafer Config Analysis - My Wafer Baseline, 2042895394943868930, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-041118:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 19:24:42, 1, 2026-04-11 19:24:42, 0, 0
+<==        Row: 2042885448244224001, TSK-WAFER-20260411174020-3F7A, Wafer Config Analysis - task15-smoke-config, 2042885086368063490, 1, null, WAFER_CONFIG_ANALYSIS, SUCCESS, NORMAL, WAFER_CONFIG:LOT-U-T15-001:W01, <<BLOB>>, <<BLOB>>, <<BLOB>>, null, 1, 1, 2026-04-11 17:40:20, 1, 2026-04-11 17:40:20, 0, 0
+<==      Total: 32
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18c0e52b]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45954373] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2137314700 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT COUNT(*) AS total FROM wafer_analysis_config WHERE deleted = 0 AND (deleted = ? AND (created_by = ? OR created_by = ?))
+==> Parameters: 0(Integer), 0(Long), 1(Long)
+<==    Columns: total
+<==        Row: 21
+<==      Total: 1
+==>  Preparing: SELECT id,config_no,config_name,description,lot_no,wafer_no,layer_id,measurement_type,stage,scanner_correction_gain,overlay_base_nm,edge_gradient,local_hotspot_strength,noise_level,grid_step,outlier_threshold,status,last_measurement_run_id,last_task_id,config_summary_json,created_by,created_at,updated_by,updated_at,deleted,version FROM wafer_analysis_config WHERE deleted=0 AND (deleted = ? AND (created_by = ? OR created_by = ?)) ORDER BY created_by ASC,updated_at DESC,id DESC LIMIT ?
+==> Parameters: 0(Integer), 0(Long), 1(Long), 20(Long)
+<==    Columns: id, config_no, config_name, description, lot_no, wafer_no, layer_id, measurement_type, stage, scanner_correction_gain, overlay_base_nm, edge_gradient, local_hotspot_strength, noise_level, grid_step, outlier_threshold, status, last_measurement_run_id, last_task_id, config_summary_json, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 3, CFG-DEMO-DRIFT, Demo Drift Compare, Drift-sensitive demo config for wafer analysis, LOT-DRIFT-001, WD01, 3, OVERLAY, POST_ETCH, 0.9000, 2.9000, 1.7000, 1.1000, 0.2200, 0.5000, 7.8000, ACTIVE, null, null, <<BLOB>>, 0, 2026-04-11 17:38:50, 0, 2026-04-11 17:38:50, 0, 0
+<==        Row: 2, CFG-DEMO-EDGE, Demo Edge Sensitive, Edge-sensitive demo config for wafer analysis, LOT-OUTLIER-001, WO01, 2, OVERLAY, PRE_ETCH, 1.1500, 3.6000, 1.9000, 1.6000, 0.1800, 0.5000, 8.5000, ACTIVE, null, null, <<BLOB>>, 0, 2026-04-11 17:38:50, 0, 2026-04-11 17:38:50, 0, 0
+<==        Row: 1, CFG-DEMO-STABLE, Demo Stable Baseline, Stable demo config for wafer analysis, LOT-STABLE-001, WS01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.2000, 0.8000, 0.1200, 0.5000, 8.0000, ACTIVE, null, null, <<BLOB>>, 0, 2026-04-11 17:38:50, 0, 2026-04-11 17:38:50, 0, 0
+<==        Row: 2043135141490569218, CFG-U-20260412101232-4247, Demo Edge Sensitive, Config-driven generated wafer analysis, LOT-U-041210, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 0.5000, 8.0000, ACTIVE, 2043135083072303105, 2043135141419266050, <<BLOB>>, 1, 2026-04-12 10:12:32, 1, 2026-04-12 10:12:32, 0, 0
+<==        Row: 2043128104253763585, CFG-U-20260412094434-E74C, TASK-DEMO-003, Config-driven generated wafer analysis, LOT-U-041209, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 0.5000, 8.0000, ACTIVE, 2043128040991076353, 2043128104111157249, <<BLOB>>, 1, 2026-04-12 09:44:34, 1, 2026-04-12 09:44:34, 0, 0
+<==        Row: 2042985154924351489, CFG-U-20260412001632-243C, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041200, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 0.5000, 8.0000, ACTIVE, 2042985099333046274, 2042985154823688194, <<BLOB>>, 1, 2026-04-12 00:16:32, 1, 2026-04-12 00:16:32, 0, 0
+<==        Row: 2042984385852575745, CFG-U-20260412001329-BC08, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041200, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 0.5000, 8.0000, ACTIVE, 2042984327883100161, 2042984385735135233, <<BLOB>>, 1, 2026-04-12 00:13:29, 1, 2026-04-12 00:13:29, 0, 0
+<==        Row: 2042983629376294913, CFG-U-20260412001028-2424, TASK-DEMO-003, Config-driven generated wafer analysis, LOT-U-041200, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 0.5000, 8.0000, ACTIVE, 2042983567439007746, 2042983629174968322, <<BLOB>>, 1, 2026-04-12 00:10:29, 1, 2026-04-12 00:10:29, 0, 0
+<==        Row: 2042969288212078594, CFG-U-20260411231329-5A78, CFG-DEMO-STABLE, Config-driven generated wafer analysis, LOT-U-041123, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042969285552889857, 2042969288065277954, <<BLOB>>, 1, 2026-04-11 23:13:30, 1, 2026-04-11 23:13:30, 0, 0
+<==        Row: 2042964008199905281, CFG-U-20260411225230-30B2, Focus-dose correlation run, Config-driven generated wafer analysis, LOT-U-041122, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042964005343584257, 2042964008069881857, <<BLOB>>, 1, 2026-04-11 22:52:31, 1, 2026-04-11 22:52:31, 0, 0
+<==        Row: 2042949933873094657, CFG-U-20260411215635-1DDF, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041121, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042949931100659713, 2042949933810180097, <<BLOB>>, 1, 2026-04-11 21:56:35, 1, 2026-04-11 21:56:35, 0, 0
+<==        Row: 2042948746423689218, CFG-U-20260411215151-6C83, Demo Stable Baseline, Config-driven generated wafer analysis, LOT-U-041121, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042948743714168834, 2042948746289471490, <<BLOB>>, 1, 2026-04-11 21:51:52, 1, 2026-04-11 21:51:52, 0, 0
+<==        Row: 2042947854173593602, CFG-U-20260411214819-9F7A, Demo Stable Baseline, Config-driven generated wafer analysis, LOT-U-041121, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042947850348388354, 2042947853900963841, <<BLOB>>, 1, 2026-04-11 21:48:19, 1, 2026-04-11 21:48:19, 0, 0
+<==        Row: 2042937599008038914, CFG-U-20260411210734-71F8, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041121, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042937593010184193, 2042937598810906626, <<BLOB>>, 1, 2026-04-11 21:07:34, 1, 2026-04-11 21:07:34, 0, 0
+<==        Row: 2042931687031668738, CFG-U-20260411204404-DFCE, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041120, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042931684691247105, 2042931686968754177, <<BLOB>>, 1, 2026-04-11 20:44:05, 1, 2026-04-11 20:44:05, 0, 0
+<==        Row: 2042930334095998978, CFG-U-20260411203842-7ED1, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041120, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042930331608776706, 2042930334028890113, <<BLOB>>, 1, 2026-04-11 20:38:42, 1, 2026-04-11 20:38:42, 0, 0
+<==        Row: 2042927093543174146, CFG-U-20260411202549-8978, Demo Edge Sensitive, Config-driven generated wafer analysis, LOT-U-041120, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042927090993037313, 2042927093417345026, <<BLOB>>, 1, 2026-04-11 20:25:50, 1, 2026-04-11 20:25:50, 0, 0
+<==        Row: 2042927014820282369, CFG-U-20260411202530-C1A5, Demo Edge Sensitive, Config-driven generated wafer analysis, LOT-U-041120, W01, 1, OVERLAY, PRE_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042927012026875905, 2042927014677676033, <<BLOB>>, 1, 2026-04-11 20:25:31, 1, 2026-04-11 20:25:31, 0, 0
+<==        Row: 2042926717041475586, CFG-U-20260411202419-F28F, My Wafer Baseline, Config-driven generated wafer analysis, LOT-U-041120, W01, 1, OVERLAY, POST_ETCH, 1.0000, 3.2000, 1.3000, 1.0000, 0.1500, 2.0000, 8.0000, ACTIVE, 2042926712369020930, 2042926716752068609, <<BLOB>>, 1, 2026-04-11 20:24:20, 1, 2026-04-11 20:24:20, 0, 0
+<==        Row: 2042924265474990082, CFG-U-20260411201435-CC50, CFG Task17 Edit, verify, LOT-U-T17-EDIT, W18, 1, OVERLAY, PRE_ETCH, 1.0100, 4.2000, 1.1000, 0.9000, 0.1200, 2.0000, 8.0000, ACTIVE, null, null, <<BLOB>>, 1, 2026-04-11 20:14:35, 1, 2026-04-11 20:14:35, 0, 0
+<==      Total: 20
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45954373]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2872832f] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2120230481 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT id,run_no,lot_id,wafer_id,layer_id,measurement_type,stage,source_type,tool_name,sampling_count,import_file_id,measurement_context_json,summary_json,status,created_by,created_at,updated_by,updated_at,deleted,version FROM measurement_run WHERE deleted=0 AND (measurement_type = ? AND status = ? AND (created_by = ? OR created_by = ?) AND deleted = ?) ORDER BY created_by ASC,sampling_count DESC,id DESC
+==> Parameters: OVERLAY(String), COMPLETED(String), 0(Long), 1(Long), 0(Integer)
+<==    Columns: id, run_no, lot_id, wafer_id, layer_id, measurement_type, stage, source_type, tool_name, sampling_count, import_file_id, measurement_context_json, summary_json, status, created_by, created_at, updated_by, updated_at, deleted, version
+<==        Row: 15, MR-RICH-DRIFT-AFTER, 8, 14, 3, OVERLAY, POST_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 14, MR-RICH-DRIFT-BEFORE, 8, 14, 3, OVERLAY, PRE_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 13, MR-RICH-OUTLIER-POST, 7, 12, 2, OVERLAY, POST_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 12, MR-RICH-OUTLIER-PRE, 7, 12, 2, OVERLAY, PRE_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 11, MR-RICH-STABLE-POST, 6, 10, 1, OVERLAY, POST_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 10, MR-RICH-STABLE-PRE, 6, 10, 1, OVERLAY, PRE_ETCH, DEMO, KLA-3XX, 121, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:59:04, 0, 2026-04-09 12:59:04, 0, 0
+<==        Row: 3, MR-DEMO-003, 1, 1, 2, OVERLAY, PRE_ETCH, DEMO, KLA-3XX, 9, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 12:57:15, 0, 2026-04-09 12:57:15, 0, 0
+<==        Row: 1, MR-DEMO-001, 1, 1, 1, OVERLAY, PRE_ETCH, DEMO, KLA-3XX, 9, null, <<BLOB>>, <<BLOB>>, COMPLETED, 0, 2026-04-09 11:49:52, 0, 2026-04-09 11:49:52, 0, 0
+<==        Row: 2043135083072303105, MRG-20260412101218-0060, 2043135082992611330, 2043135082992611331, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-12 10:12:18, 1, 2026-04-12 10:12:18, 0, 0
+<==        Row: 2043128040991076353, MRG-20260412094419-FF32, 2043128040852664322, 2043128040919773185, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-12 09:44:19, 1, 2026-04-12 09:44:19, 0, 0
+<==        Row: 2042985099333046274, MRG-20260412001619-1168, 2042983567254458369, 2042983567376093186, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-12 00:16:19, 1, 2026-04-12 00:16:19, 0, 0
+<==        Row: 2042984327883100161, MRG-20260412001315-61DF, 2042983567254458369, 2042983567376093186, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-12 00:13:15, 1, 2026-04-12 00:13:15, 0, 0
+<==        Row: 2042983567439007746, MRG-20260412001013-458C, 2042983567254458369, 2042983567376093186, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-12 00:10:14, 1, 2026-04-12 00:10:14, 0, 0
+<==        Row: 2042979544296136706, MRG-20260411235414-E8E2, 2042979543985758209, 2042979544224833538, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 23:54:15, 1, 2026-04-11 23:54:15, 0, 0
+<==        Row: 2042904846375931906, MRG-20260411185725-D67F, 2042895394943868930, 2042895395078086658, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 196321, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 18:57:25, 1, 2026-04-11 18:57:25, 0, 0
+<==        Row: 2042922704392798209, MRG-20260411200823-A1A0, 2042922704237608962, 2042922704346660866, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 49077, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:08:23, 1, 2026-04-11 20:08:23, 0, 0
+<==        Row: 2042921265524207617, MRG-20260411200240-36C9, 2042921265327075329, 2042921265457098754, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 49077, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:02:40, 1, 2026-04-11 20:02:40, 0, 0
+<==        Row: 2042979590903242753, MRG-20260411235425-5126, 2042979590831939586, 2042979590899048450, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 23:54:26, 1, 2026-04-11 23:54:26, 0, 0
+<==        Row: 2042969285552889857, MRG-20260411231328-EEF9, 2042969285439643649, 2042969285485780993, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 23:13:29, 1, 2026-04-11 23:13:29, 0, 0
+<==        Row: 2042964005343584257, MRG-20260411225229-4012, 2042964005213560833, 2042964005280669698, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 22:52:30, 1, 2026-04-11 22:52:30, 0, 0
+<==        Row: 2042949931100659713, MRG-20260411215634-F15B, 2042937592720777217, 2042937592943075329, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 21:56:34, 1, 2026-04-11 21:56:34, 0, 0
+<==        Row: 2042948743714168834, MRG-20260411215151-7E7B, 2042937592720777217, 2042937592943075329, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 21:51:51, 1, 2026-04-11 21:51:51, 0, 0
+<==        Row: 2042947850348388354, MRG-20260411214818-75B6, 2042937592720777217, 2042937592943075329, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 21:48:18, 1, 2026-04-11 21:48:18, 0, 0
+<==        Row: 2042937593010184193, MRG-20260411210732-2879, 2042937592720777217, 2042937592943075329, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 21:07:33, 1, 2026-04-11 21:07:33, 0, 0
+<==        Row: 2042931684691247105, MRG-20260411204404-DFFA, 2042926712146722817, 2042926712301912066, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:44:04, 1, 2026-04-11 20:44:04, 0, 0
+<==        Row: 2042930331608776706, MRG-20260411203841-3023, 2042926712146722817, 2042926712301912066, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:38:42, 1, 2026-04-11 20:38:42, 0, 0
+<==        Row: 2042927090993037313, MRG-20260411202548-1776, 2042926712146722817, 2042926712301912066, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:25:49, 1, 2026-04-11 20:25:49, 0, 0
+<==        Row: 2042927012026875905, MRG-20260411202530-A811, 2042926712146722817, 2042926712301912066, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:25:30, 1, 2026-04-11 20:25:30, 0, 0
+<==        Row: 2042926712369020930, MRG-20260411202418-E896, 2042926712146722817, 2042926712301912066, 1, OVERLAY, POST_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:24:19, 1, 2026-04-11 20:24:19, 0, 0
+<==        Row: 2042924213293654017, MRG-20260411201422-59E5, 2042918499007377409, 2042918499170955265, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:14:23, 1, 2026-04-11 20:14:23, 0, 0
+<==        Row: 2042924026974281730, MRG-20260411201338-5D9B, 2042924026747789314, 2042924026902978562, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 20:13:38, 1, 2026-04-11 20:13:38, 0, 0
+<==        Row: 2042885086565195777, MRG-20260411173854-7805, 2042885086368063490, 2042885086502281218, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 12256, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 17:38:54, 1, 2026-04-11 17:38:54, 0, 0
+<==        Row: 2042850033315446785, MRU-SMOKE-1775888376, 2042850033118314497, 2042850033185423362, 1, OVERLAY, PRE_ETCH, USER_IMPORT, SMOKE_TOOL, 1, 2042850033252532226, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 15:19:37, 1, 2026-04-11 15:19:37, 0, 0
+<==        Row: 2042920021506248706, MRG-20260411195743-B3A9, 2042918499007377409, 2042918499170955265, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 0, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 19:57:43, 1, 2026-04-11 19:57:43, 0, 0
+<==        Row: 2042918499296784385, MRG-20260411195140-4EE4, 2042918499007377409, 2042918499170955265, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 0, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 19:51:40, 1, 2026-04-11 19:51:40, 0, 0
+<==        Row: 2042909305596383234, MRG-20260411191508-DF09, 2042909305164369922, 2042909305449582593, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 0, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 19:15:09, 1, 2026-04-11 19:15:09, 0, 0
+<==        Row: 2042895395149389826, MRG-20260411181952-9A16, 2042895394943868930, 2042895395078086658, 1, OVERLAY, PRE_ETCH, USER_GENERATED, CONFIG_GENERATOR, 0, null, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 18:19:52, 1, 2026-04-11 18:19:52, 0, 0
+<==        Row: 2042848209720107011, MRU-CURL-1775887942, 2042848209657192450, 2042848209657192451, 1, OVERLAY, PRE_ETCH, USER_IMPORT, SMOKE_TOOL, 0, 2042848209720107010, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 15:12:22, 1, 2026-04-11 15:12:22, 0, 0
+<==        Row: 2042847617840898050, MRU-SMOKE-1775887800, 2042847617643765761, 2042847617706680321, 1, OVERLAY, PRE_ETCH, USER_IMPORT, SMOKE_TOOL, 0, 2042847617773789185, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 15:10:01, 1, 2026-04-11 15:10:01, 0, 0
+<==        Row: 2042847402106871809, MRU-SMOKE-001, 2042847401775521794, 2042847401842630657, 1, OVERLAY, PRE_ETCH, USER_IMPORT, SMOKE_TOOL, 0, 2042847401905545217, <<BLOB>>, <<BLOB>>, COMPLETED, 1, 2026-04-11 15:09:10, 1, 2026-04-11 15:09:10, 0, 0
+<==      Total: 40
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2872832f]
+2026-04-12T10:39:41.539+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-8] c.s.m.m.s.i.MeasurementRunServiceImpl    : [measurement-run] list userId=1 lotId=null waferId=null layerId=null measurementType=OVERLAY stage=null size=40 cacheHit=false elapsedMs=1052
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@238dafcd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1999856312 wrapping com.mysql.cj.jdbc.ConnectionImpl@57f0bfc3] will not be managed by Spring
+==>  Preparing: SELECT id,measurement_run_id,wafer_id,layer_id,mark_id,target_code,x_coord,y_coord,overlay_x,overlay_y,overlay_magnitude,residual_value,focus_value,dose_value,confidence,is_outlier,extra_metrics_json,created_at,created_by FROM overlay_measurement_point WHERE (measurement_run_id IN (SELECT id FROM measurement_run WHERE deleted = 0 AND (created_by = 0 OR created_by = 1)) AND measurement_run_id = ?)
+==> Parameters: 15(Long)
+<==    Columns: id, measurement_run_id, wafer_id, layer_id, mark_id, target_code, x_coord, y_coord, overlay_x, overlay_y, overlay_magnitude, residual_value, focus_value, dose_value, confidence, is_outlier, extra_metrics_json, created_at, created_by
+<==        Row: 1443, 15, 14, 3, null, P001, -50.0000, -50.0000, 0.500000, 0.800000, 0.943398, 0.690000, -0.001000, 41.650000, 0.9120, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1454, 15, 14, 3, null, P012, -50.0000, -40.0000, 0.540000, 0.770000, 0.940479, 0.660000, 0.005000, 41.730000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1465, 15, 14, 3, null, P023, -50.0000, -30.0000, 0.580000, 0.740000, 0.940213, 0.630000, 0.011000, 41.810000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1476, 15, 14, 3, null, P034, -50.0000, -20.0000, 0.620000, 0.710000, 0.942603, 0.600000, 0.017000, 41.890000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1487, 15, 14, 3, null, P045, -50.0000, -10.0000, 0.660000, 0.680000, 0.947629, 0.570000, 0.023000, 41.970000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1498, 15, 14, 3, null, P056, -50.0000, 0.0000, 0.700000, 0.650000, 0.955249, 0.540000, 0.029000, 42.050000, 0.9520, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1509, 15, 14, 3, null, P067, -50.0000, 10.0000, 0.740000, 0.620000, 0.965401, 0.570000, 0.035000, 42.130000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1520, 15, 14, 3, null, P078, -50.0000, 20.0000, 0.780000, 0.590000, 0.978008, 0.600000, 0.041000, 42.210000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1531, 15, 14, 3, null, P089, -50.0000, 30.0000, 0.820000, 0.560000, 0.992975, 0.630000, 0.047000, 42.290000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1542, 15, 14, 3, null, P100, -50.0000, 40.0000, 0.860000, 0.530000, 1.010198, 0.660000, 0.053000, 42.370000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1553, 15, 14, 3, null, P111, -50.0000, 50.0000, 0.900000, 0.500000, 1.029563, 0.690000, 0.059000, 42.450000, 0.9120, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1444, 15, 14, 3, null, P002, -40.0000, -50.0000, 0.580000, 0.870000, 1.045610, 0.650000, 0.010000, 41.750000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1455, 15, 14, 3, null, P013, -40.0000, -40.0000, 0.620000, 0.840000, 1.044031, 0.620000, 0.016000, 41.830000, 0.9280, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1466, 15, 14, 3, null, P024, -40.0000, -30.0000, 0.660000, 0.810000, 1.044844, 0.590000, 0.022000, 41.910000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1477, 15, 14, 3, null, P035, -40.0000, -20.0000, 0.700000, 0.780000, 1.048046, 0.560000, 0.028000, 41.990000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1488, 15, 14, 3, null, P046, -40.0000, -10.0000, 0.740000, 0.750000, 1.053613, 0.530000, 0.034000, 42.070000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1499, 15, 14, 3, null, P057, -40.0000, 0.0000, 0.780000, 0.720000, 1.061508, 0.500000, 0.040000, 42.150000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1510, 15, 14, 3, null, P068, -40.0000, 10.0000, 0.820000, 0.690000, 1.071681, 0.530000, 0.046000, 42.230000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1521, 15, 14, 3, null, P079, -40.0000, 20.0000, 0.860000, 0.660000, 1.084066, 0.560000, 0.052000, 42.310000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1532, 15, 14, 3, null, P090, -40.0000, 30.0000, 0.900000, 0.630000, 1.098590, 0.590000, 0.058000, 42.390000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1543, 15, 14, 3, null, P101, -40.0000, 40.0000, 0.940000, 0.600000, 1.115168, 0.620000, 0.064000, 42.470000, 0.9280, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1554, 15, 14, 3, null, P112, -40.0000, 50.0000, 0.980000, 0.570000, 1.133711, 0.650000, 0.070000, 42.550000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1445, 15, 14, 3, null, P003, -30.0000, -50.0000, 0.660000, 0.940000, 1.148564, 0.610000, 0.021000, 41.850000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1456, 15, 14, 3, null, P014, -30.0000, -40.0000, 0.700000, 0.910000, 1.148085, 0.580000, 0.027000, 41.930000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1467, 15, 14, 3, null, P025, -30.0000, -30.0000, 0.740000, 0.880000, 1.149783, 0.550000, 0.033000, 42.010000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1478, 15, 14, 3, null, P036, -30.0000, -20.0000, 0.780000, 0.850000, 1.153646, 0.520000, 0.039000, 42.090000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1489, 15, 14, 3, null, P047, -30.0000, -10.0000, 0.820000, 0.820000, 1.159655, 0.490000, 0.045000, 42.170000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1500, 15, 14, 3, null, P058, -30.0000, 0.0000, 0.860000, 0.790000, 1.167776, 0.460000, 0.051000, 42.250000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1511, 15, 14, 3, null, P069, -30.0000, 10.0000, 0.900000, 0.760000, 1.177964, 0.490000, 0.057000, 42.330000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1522, 15, 14, 3, null, P080, -30.0000, 20.0000, 0.940000, 0.730000, 1.190168, 0.520000, 0.063000, 42.410000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1533, 15, 14, 3, null, P091, -30.0000, 30.0000, 0.980000, 0.700000, 1.204326, 0.550000, 0.069000, 42.490000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1544, 15, 14, 3, null, P102, -30.0000, 40.0000, 1.020000, 0.670000, 1.220369, 0.580000, 0.075000, 42.570000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1555, 15, 14, 3, null, P113, -30.0000, 50.0000, 1.060000, 0.640000, 1.238225, 0.610000, 0.081000, 42.650000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1446, 15, 14, 3, null, P004, -20.0000, -50.0000, 0.740000, 1.010000, 1.252078, 0.570000, 0.032000, 41.950000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1457, 15, 14, 3, null, P015, -20.0000, -40.0000, 0.780000, 0.980000, 1.252517, 0.540000, 0.038000, 42.030000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1468, 15, 14, 3, null, P026, -20.0000, -30.0000, 0.820000, 0.950000, 1.254950, 0.510000, 0.044000, 42.110000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1479, 15, 14, 3, null, P037, -20.0000, -20.0000, 0.860000, 0.920000, 1.259365, 0.480000, 0.050000, 42.190000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1490, 15, 14, 3, null, P048, -20.0000, -10.0000, 0.900000, 0.890000, 1.265741, 0.450000, 0.056000, 42.270000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1501, 15, 14, 3, null, P059, -20.0000, 0.0000, 0.940000, 0.860000, 1.274049, 0.420000, 0.062000, 42.350000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1512, 15, 14, 3, null, P070, -20.0000, 10.0000, 0.980000, 0.830000, 1.284251, 0.450000, 0.068000, 42.430000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1523, 15, 14, 3, null, P081, -20.0000, 20.0000, 1.020000, 0.800000, 1.296302, 0.480000, 0.074000, 42.510000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1534, 15, 14, 3, null, P092, -20.0000, 30.0000, 1.060000, 0.770000, 1.310153, 0.510000, 0.080000, 42.590000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1545, 15, 14, 3, null, P103, -20.0000, 40.0000, 1.100000, 0.740000, 1.325745, 0.540000, 0.086000, 42.670000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1556, 15, 14, 3, null, P114, -20.0000, 50.0000, 1.140000, 0.710000, 1.343019, 0.570000, 0.092000, 42.750000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1447, 15, 14, 3, null, P005, -10.0000, -50.0000, 0.820000, 1.080000, 1.356024, 0.530000, 0.043000, 42.050000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1458, 15, 14, 3, null, P016, -10.0000, -40.0000, 0.860000, 1.050000, 1.357240, 0.500000, 0.049000, 42.130000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1469, 15, 14, 3, null, P027, -10.0000, -30.0000, 0.900000, 1.020000, 1.360294, 0.470000, 0.055000, 42.210000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1480, 15, 14, 3, null, P038, -10.0000, -20.0000, 0.940000, 0.990000, 1.365174, 0.440000, 0.061000, 42.290000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1491, 15, 14, 3, null, P049, -10.0000, -10.0000, 0.980000, 0.960000, 1.371860, 0.410000, 0.067000, 42.370000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1502, 15, 14, 3, null, P060, -10.0000, 0.0000, 1.020000, 0.930000, 1.380326, 0.380000, 0.073000, 42.450000, 0.9840, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1513, 15, 14, 3, null, P071, -10.0000, 10.0000, 1.060000, 0.900000, 1.390539, 0.410000, 0.079000, 42.530000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1524, 15, 14, 3, null, P082, -10.0000, 20.0000, 1.100000, 0.870000, 1.402462, 0.440000, 0.085000, 42.610000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1535, 15, 14, 3, null, P093, -10.0000, 30.0000, 1.140000, 0.840000, 1.416051, 0.470000, 0.091000, 42.690000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1546, 15, 14, 3, null, P104, -10.0000, 40.0000, 1.180000, 0.810000, 1.431258, 0.500000, 0.097000, 42.770000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1557, 15, 14, 3, null, P115, -10.0000, 50.0000, 1.220000, 0.780000, 1.448033, 0.530000, 0.103000, 42.850000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1448, 15, 14, 3, null, P006, 0.0000, -50.0000, 0.900000, 1.150000, 1.460308, 0.490000, 0.054000, 42.150000, 0.9520, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1459, 15, 14, 3, null, P017, 0.0000, -40.0000, 0.940000, 1.120000, 1.462190, 0.460000, 0.060000, 42.230000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1470, 15, 14, 3, null, P028, 0.0000, -30.0000, 0.980000, 1.090000, 1.465776, 0.430000, 0.066000, 42.310000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1481, 15, 14, 3, null, P039, 0.0000, -20.0000, 1.020000, 1.060000, 1.471054, 0.400000, 0.072000, 42.390000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1492, 15, 14, 3, null, P050, 0.0000, -10.0000, 1.060000, 1.030000, 1.478005, 0.370000, 0.078000, 42.470000, 0.9840, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1503, 15, 14, 3, null, P061, 0.0000, 0.0000, 1.100000, 1.000000, 1.486607, 0.340000, 0.084000, 42.550000, 0.9920, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1514, 15, 14, 3, null, P072, 0.0000, 10.0000, 1.140000, 0.970000, 1.496830, 0.370000, 0.090000, 42.630000, 0.9840, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1525, 15, 14, 3, null, P083, 0.0000, 20.0000, 1.180000, 0.940000, 1.508642, 0.400000, 0.096000, 42.710000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1536, 15, 14, 3, null, P094, 0.0000, 30.0000, 1.220000, 0.910000, 1.522005, 0.430000, 0.102000, 42.790000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1547, 15, 14, 3, null, P105, 0.0000, 40.0000, 1.260000, 0.880000, 1.536880, 0.460000, 0.108000, 42.870000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1558, 15, 14, 3, null, P116, 0.0000, 50.0000, 1.300000, 0.850000, 1.553222, 0.490000, 0.114000, 42.950000, 0.9520, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1449, 15, 14, 3, null, P007, 10.0000, -50.0000, 0.980000, 1.220000, 1.564864, 0.530000, 0.065000, 42.250000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1460, 15, 14, 3, null, P018, 10.0000, -40.0000, 1.020000, 1.190000, 1.567323, 0.500000, 0.071000, 42.330000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1471, 15, 14, 3, null, P029, 10.0000, -30.0000, 1.060000, 1.160000, 1.571369, 0.470000, 0.077000, 42.410000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1482, 15, 14, 3, null, P040, 10.0000, -20.0000, 1.100000, 1.130000, 1.576991, 0.440000, 0.083000, 42.490000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1493, 15, 14, 3, null, P051, 10.0000, -10.0000, 1.140000, 1.100000, 1.584172, 0.410000, 0.089000, 42.570000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1504, 15, 14, 3, null, P062, 10.0000, 0.0000, 1.180000, 1.070000, 1.592890, 0.380000, 0.095000, 42.650000, 0.9840, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1515, 15, 14, 3, null, P073, 10.0000, 10.0000, 1.220000, 1.040000, 1.603122, 0.410000, 0.101000, 42.730000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1526, 15, 14, 3, null, P084, 10.0000, 20.0000, 1.260000, 1.010000, 1.614837, 0.440000, 0.107000, 42.810000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1537, 15, 14, 3, null, P095, 10.0000, 30.0000, 1.300000, 0.980000, 1.628005, 0.470000, 0.113000, 42.890000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1548, 15, 14, 3, null, P106, 10.0000, 40.0000, 1.340000, 0.950000, 1.642589, 0.500000, 0.119000, 42.970000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1559, 15, 14, 3, null, P117, 10.0000, 50.0000, 1.380000, 0.920000, 1.658554, 0.530000, 0.125000, 43.050000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1450, 15, 14, 3, null, P008, 20.0000, -50.0000, 1.060000, 1.290000, 1.669641, 0.570000, 0.076000, 42.350000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1461, 15, 14, 3, null, P019, 20.0000, -40.0000, 1.100000, 1.260000, 1.672603, 0.540000, 0.082000, 42.430000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1472, 15, 14, 3, null, P030, 20.0000, -30.0000, 1.140000, 1.230000, 1.677051, 0.510000, 0.088000, 42.510000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1483, 15, 14, 3, null, P041, 20.0000, -20.0000, 1.180000, 1.200000, 1.682974, 0.480000, 0.094000, 42.590000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1494, 15, 14, 3, null, P052, 20.0000, -10.0000, 1.220000, 1.170000, 1.690355, 0.450000, 0.100000, 42.670000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1505, 15, 14, 3, null, P063, 20.0000, 0.0000, 1.260000, 1.140000, 1.699176, 0.420000, 0.106000, 42.750000, 0.9760, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1516, 15, 14, 3, null, P074, 20.0000, 10.0000, 1.300000, 1.110000, 1.709415, 0.450000, 0.112000, 42.830000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1527, 15, 14, 3, null, P085, 20.0000, 20.0000, 1.340000, 1.080000, 1.721046, 0.480000, 0.118000, 42.910000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1538, 15, 14, 3, null, P096, 20.0000, 30.0000, 1.380000, 1.050000, 1.734042, 0.510000, 0.124000, 42.990000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1549, 15, 14, 3, null, P107, 20.0000, 40.0000, 1.420000, 1.020000, 1.748371, 0.540000, 0.130000, 43.070000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1560, 15, 14, 3, null, P118, 20.0000, 50.0000, 1.460000, 0.990000, 1.764001, 0.570000, 0.136000, 43.150000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1451, 15, 14, 3, null, P009, 30.0000, -50.0000, 1.140000, 1.360000, 1.774599, 0.610000, 0.087000, 42.450000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1462, 15, 14, 3, null, P020, 30.0000, -40.0000, 1.180000, 1.330000, 1.778004, 0.580000, 0.093000, 42.530000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1473, 15, 14, 3, null, P031, 30.0000, -30.0000, 1.220000, 1.300000, 1.782807, 0.550000, 0.099000, 42.610000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1484, 15, 14, 3, null, P042, 30.0000, -20.0000, 1.260000, 1.270000, 1.788994, 0.520000, 0.105000, 42.690000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1495, 15, 14, 3, null, P053, 30.0000, -10.0000, 1.300000, 1.240000, 1.796552, 0.490000, 0.111000, 42.770000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1506, 15, 14, 3, null, P064, 30.0000, 0.0000, 1.340000, 1.210000, 1.805464, 0.460000, 0.117000, 42.850000, 0.9680, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1517, 15, 14, 3, null, P075, 30.0000, 10.0000, 1.380000, 1.180000, 1.815709, 0.490000, 0.123000, 42.930000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1528, 15, 14, 3, null, P086, 30.0000, 20.0000, 1.420000, 1.150000, 1.827266, 0.520000, 0.129000, 43.010000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1539, 15, 14, 3, null, P097, 30.0000, 30.0000, 1.460000, 1.120000, 1.840109, 0.550000, 0.135000, 43.090000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1550, 15, 14, 3, null, P108, 30.0000, 40.0000, 1.500000, 1.090000, 1.854211, 0.580000, 0.141000, 43.170000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1561, 15, 14, 3, null, P119, 30.0000, 50.0000, 1.540000, 1.060000, 1.869545, 0.610000, 0.147000, 43.250000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1452, 15, 14, 3, null, P010, 40.0000, -50.0000, 1.220000, 1.430000, 1.879707, 0.650000, 0.098000, 42.550000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1463, 15, 14, 3, null, P021, 40.0000, -40.0000, 1.260000, 1.400000, 1.883507, 0.620000, 0.104000, 42.630000, 0.9280, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1474, 15, 14, 3, null, P032, 40.0000, -30.0000, 1.300000, 1.370000, 1.888624, 0.590000, 0.110000, 42.710000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1485, 15, 14, 3, null, P043, 40.0000, -20.0000, 1.340000, 1.340000, 1.895046, 0.560000, 0.116000, 42.790000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1496, 15, 14, 3, null, P054, 40.0000, -10.0000, 1.380000, 1.310000, 1.902761, 0.530000, 0.122000, 42.870000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1507, 15, 14, 3, null, P065, 40.0000, 0.0000, 1.420000, 1.280000, 1.911753, 0.500000, 0.128000, 42.950000, 0.9600, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1518, 15, 14, 3, null, P076, 40.0000, 10.0000, 1.460000, 1.250000, 1.922004, 0.530000, 0.134000, 43.030000, 0.9520, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1529, 15, 14, 3, null, P087, 40.0000, 20.0000, 1.500000, 1.220000, 1.933494, 0.560000, 0.140000, 43.110000, 0.9440, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1540, 15, 14, 3, null, P098, 40.0000, 30.0000, 1.540000, 1.190000, 1.946201, 0.590000, 0.146000, 43.190000, 0.9360, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1551, 15, 14, 3, null, P109, 40.0000, 40.0000, 1.580000, 1.160000, 1.960102, 0.620000, 0.152000, 43.270000, 0.9280, 0, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1562, 15, 14, 3, null, P120, 40.0000, 50.0000, 1.620000, 1.130000, 1.975171, 0.650000, 0.158000, 43.350000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1453, 15, 14, 3, null, P011, 50.0000, -50.0000, 1.300000, 1.500000, 1.984943, 0.690000, 0.109000, 42.650000, 0.9120, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1464, 15, 14, 3, null, P022, 50.0000, -40.0000, 1.340000, 1.470000, 1.989095, 0.660000, 0.115000, 42.730000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1475, 15, 14, 3, null, P033, 50.0000, -30.0000, 1.380000, 1.440000, 1.994492, 0.630000, 0.121000, 42.810000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1486, 15, 14, 3, null, P044, 50.0000, -20.0000, 1.420000, 1.410000, 2.001125, 0.600000, 0.127000, 42.890000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1497, 15, 14, 3, null, P055, 50.0000, -10.0000, 1.460000, 1.380000, 2.008980, 0.570000, 0.133000, 42.970000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1508, 15, 14, 3, null, P066, 50.0000, 0.0000, 1.500000, 1.350000, 2.018044, 0.540000, 0.139000, 43.050000, 0.9520, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1519, 15, 14, 3, null, P077, 50.0000, 10.0000, 1.540000, 1.320000, 2.028300, 0.570000, 0.145000, 43.130000, 0.9440, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1530, 15, 14, 3, null, P088, 50.0000, 20.0000, 1.580000, 1.290000, 2.039730, 0.600000, 0.151000, 43.210000, 0.9360, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1541, 15, 14, 3, null, P099, 50.0000, 30.0000, 1.620000, 1.260000, 2.052316, 0.630000, 0.157000, 43.290000, 0.9280, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1552, 15, 14, 3, null, P110, 50.0000, 40.0000, 1.660000, 1.230000, 2.066035, 0.660000, 0.163000, 43.370000, 0.9200, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==        Row: 1563, 15, 14, 3, null, P121, 50.0000, 50.0000, 1.700000, 1.200000, 2.080865, 0.690000, 0.169000, 43.450000, 0.9120, 1, <<BLOB>>, 2026-04-09 12:59:04, 0
+<==      Total: 121
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@238dafcd]
+2026-04-12T10:39:43.339+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-9] c.s.m.o.s.i.OverlayAnalysisServiceImpl   : [overlay-analysis] scatter densified runId=15 sourcePoints=121 densePoints=196321 densifyElapsedMs=1597 memoryUsedMb=150
+2026-04-12T10:39:43.341+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-9] c.s.m.o.s.i.OverlayAnalysisServiceImpl   : [overlay-analysis] scatter selectPoints userId=1 waferId=null layerId=null runId=15 points=196321 denseCacheHit=false queryElapsedMs=1776 memoryUsedMb=150
+2026-04-12T10:39:43.388+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-9] c.s.m.o.s.i.OverlayAnalysisServiceImpl   : [overlay-analysis] scatter cacheHit=false cacheKey=simulab:overlay:scatter:1:_:_:15:overlay_magnitude size=6136
+2026-04-12T10:39:43.388+09:00  INFO 97496 --- [simulab-backend] [io-18084-exec-9] c.s.m.o.s.i.OverlayAnalysisServiceImpl   : [overlay-analysis] scatter userId=1 waferId=null layerId=null runId=15 metricCode=overlay_magnitude points=6136 elapsedMs=1825 memoryUsedMb=158

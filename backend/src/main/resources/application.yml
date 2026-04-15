@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: simulab-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  jackson:
+    time-zone: Asia/Tokyo
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:${SIMULAB_DB_HOST:localhost}}:${MYSQL_PORT:${SIMULAB_DB_PORT:3306}}/${MYSQL_DB:${SIMULAB_DB_NAME:simulab}}?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Tokyo&rewriteBatchedStatements=true
+    username: ${MYSQL_USER:${SIMULAB_DB_USERNAME:root}}
+    password: ${MYSQL_PASSWORD:${SIMULAB_DB_PASSWORD:root}}
+  data:
+    redis:
+      host: ${REDIS_HOST:${SIMULAB_REDIS_HOST:localhost}}
+      port: ${REDIS_PORT:${SIMULAB_REDIS_PORT:6379}}
+      password: ${REDIS_PASSWORD:${SIMULAB_REDIS_PASSWORD:}}
+      database: ${SIMULAB_REDIS_DATABASE:0}
+      timeout: 5s
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    encoding: UTF-8
+  sql:
+    init:
+      mode: never
+server:
+  port: 8080
+  servlet:
+    context-path: /simulab
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+simulab:
+  security:
+    jwt:
+      issuer: simulab-backend
+      secret: ${JWT_SECRET:${SIMULAB_JWT_SECRET:SimuLabJwtSecretKeyForStageOneDevelopment123456}}
+      access-token-expire-seconds: 7200
+    cors:
+      allowed-origins: ${SIMULAB_CORS_ALLOWED_ORIGINS:*}
+      allowed-methods: ${SIMULAB_CORS_ALLOWED_METHODS:GET,POST,PUT,DELETE,PATCH,OPTIONS}
+      allowed-headers: ${SIMULAB_CORS_ALLOWED_HEADERS:*}
+      allow-credentials: ${SIMULAB_CORS_ALLOW_CREDENTIALS:true}
+  demo:
+    initialize-enabled: false
+  analysis:
+    overlay-executor-pool-size: ${SIMULAB_ANALYSIS_OVERLAY_EXECUTOR_POOL_SIZE:8}
+    wafer-generate-executor-pool-size: ${SIMULAB_ANALYSIS_WAFER_GENERATE_EXECUTOR_POOL_SIZE:8}
+    overlay-densify-parallelism: ${SIMULAB_ANALYSIS_OVERLAY_DENSIFY_PARALLELISM:8}
+    wafer-generate-parallelism: ${SIMULAB_ANALYSIS_WAFER_GENERATE_PARALLELISM:8}
+
+logging:
+  level:
+    com.simulab: INFO

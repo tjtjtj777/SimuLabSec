@@ -1,0 +1,5 @@
+[31;1mGet-Content: [0mD:\vscodeProject\SimuLab\backend\run-app.ps1:17[0m
+[31;1m[0m[36;1mLine |[0m
+[31;1m[0m[36;1m[36;1m  17 | [0m $deps = ([36;1mGet-Content "$PSScriptRoot\java.cp.deps.txt" -Raw[0m).Trim()[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mCannot find path 'D:\vscodeProject\SimuLab\backend\java.cp.deps.txt' because it does not exist.[0m
