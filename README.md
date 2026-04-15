@@ -13,6 +13,9 @@ SimuLabSec 是一个面向半导体工艺优化的仿真平台，支持对晶圆
 
 ---
 
+<img width="941" height="407" alt="image" src="https://github.com/user-attachments/assets/e98fc201-e7f6-4eea-bdce-48e9dd8e1b29" />
+
+
 ## 🧠 核心功能
 
 ### 🔬 1. 仿真计算
