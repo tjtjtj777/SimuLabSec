@@ -64,3 +64,8 @@ SimuLabSec 是一个面向半导体工艺优化的仿真平台，支持对晶圆
 ```text
 线程池（任务并发） + Parallelism（任务内部并行）
 ```
+<img width="842" height="418" alt="image" src="https://github.com/user-attachments/assets/2c304f14-6466-4628-ae84-3dfbe41a4d62" />
+缓存命中耗时
+<img width="941" height="363" alt="image" src="https://github.com/user-attachments/assets/f4992af2-8853-4d06-9e52-60e22230ba8b" />
+
+
